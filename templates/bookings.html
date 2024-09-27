@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bookings</title>
+    <style>
+        body{
+           background-color:grey;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 80px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            color:white;
+        }
+
+        th {
+            background-color: orange;
+        }
+        h1{
+            color:white;
+            text-align:center;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Room Bookings</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Room Type</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Booking Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for booking in bookings %}
+            <tr>
+                <td>{{ booking.id }}</td>
+                <td>{{ booking.customer_name }}</td>
+                <td>{{ booking.email }}</td>
+                <td>{{ booking.phone_number }}</td>
+                <td>{{ booking.room_type }}</td>
+                <td>{{ booking.check_in }}</td>
+                <td>{{ booking.check_out }}</td>
+                <td>{{ booking.created_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

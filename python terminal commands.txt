@@ -1,0 +1,56 @@
+python terminal commands:
+
+for retrieve the data from database we need import flask framework for web application and import MySQL.connector for python database connectivity .
+the commands are :
+
+If you're using Python 3.12, you may want to explicitly use pip for that Python version:
+1/ python -m pip install flask
+
+Alternatively, if you have multiple Python installations, you can target the correct one like this:
+C:/Users/asmam/AppData/Local/Programs/Python/Python312/python.exe -m pip install flask
+
+
+
+
+
+1/ "pip install Flask" (make sure its similar version that is python using)
+
+Verify Flask Installation: Once installed, you can verify that Flask was installed correctly by running:
+pip show flask
+
+
+2/  "pip install mysql-connector-python" for database connection
+3/ you can see pip list for entire list of services by using "pip list" command
+4/ for virtual environment or for web interface like browser try 
+5/  Navigate to Your Project Directory:
+First, make sure you're in the project directory where you want to set up the virtual environment. For example:
+cd d:/bootcamp/javascript/portfolio/booking-database
+6/ 2. Create the Virtual Environment:
+To create a virtual environment, you can use the venv module (built into Python 3).
+
+Run this command to create the virtual environment:
+
+python -m venv venv
+This will create a new folder named venv in your project directory, containing the virtual environment.
+
+7/ Activate the Virtual Environment:
+After creating the virtual environment, you need to activate it.
+.\venv\Scripts\activate
+
+8/ Running Your Script in the Virtual Environment:
+After activating the virtual environment, run your script as usual:
+python app.py
+9/ . Deactivate the Virtual Environment:
+When you're done working in the virtual environment, you can deactivate it:
+deactivate
+
+
+
+if database did show the connection result error or didn't show the record into browser then use below commands:
+pip uninstall mysql-connector
+pip uninstall mysql-connector-python
+pip install mysql-connector-python
+y(for yes)
+https://youtu.be/F6b36EdjrF8
+
+
